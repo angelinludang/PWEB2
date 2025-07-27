@@ -13,6 +13,11 @@ Proyek ini dibuat untuk memenuhi tugas Ujian Akhir Semester (UAS) mata kuliah **
 
 Akses aplikasi: https://educonnect.fast-page.org/
 
+## Penempatan Code Halaman Utama
+
+- app/view/home_guest.php
+- app/view/home_user.php
+
 ## 📁 Fitur Utama
 
 - Login dan register user
