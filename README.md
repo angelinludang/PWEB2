@@ -24,7 +24,6 @@ Akses aplikasi: https://educonnect.fast-page.org/
 - Upload & manajemen materi edukatif
 - Komentar bertingkat
 - Sistem persetujuan materi oleh admin
-- Like & materi populer
 
 ## ⚙️ Teknologi
 
