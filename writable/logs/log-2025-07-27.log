@@ -1,0 +1,346 @@
+INFO - 2025-07-27 05:40:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-07-27 05:40:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-07-27 05:41:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-07-27 05:41:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-07-27 05:41:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-07-27 05:47:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-07-27 05:47:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-07-27 05:49:31 --> ErrorException: Maximum execution time of 60 seconds exceeded
+in SYSTEMPATH/HotReloader/DirectoryHasher.php on line 74.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2025-07-27 05:50:37 --> ErrorException: Maximum execution time of 60 seconds exceeded
+in SYSTEMPATH/HotReloader/IteratorFilter.php on line 39.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2025-07-27 05:51:43 --> ErrorException: Maximum execution time of 60 seconds exceeded
+in SYSTEMPATH/HotReloader/IteratorFilter.php on line 39.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2025-07-27 05:52:49 --> ErrorException: Maximum execution time of 60 seconds exceeded
+in SYSTEMPATH/HotReloader/DirectoryHasher.php on line 74.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2025-07-27 06:04:37 --> LogicException: Context must be set before run() is called. If you are upgrading from 4.1.x, you need to merge `public/index.php` and `spark` file from `vendor/codeigniter4/framework`.
+in SYSTEMPATH/CodeIgniter.php on line 344.
+ 1 FCPATH/index.php(29): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2025-07-27 06:06:02 --> LogicException: Context must be set before run() is called. If you are upgrading from 4.1.x, you need to merge `public/index.php` and `spark` file from `vendor/codeigniter4/framework`.
+in SYSTEMPATH/CodeIgniter.php on line 344.
+ 1 FCPATH/index.php(29): CodeIgniter\CodeIgniter->run()
+INFO - 2025-07-27 06:07:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2025-07-27 06:07:48 --> Error connecting to the database: mysqli_sql_exception: No such file or directory in /home/vol18_1/byethost11.com/b11_39498725/educonnect.fast-page.org/htdocs/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php:184
+Stack trace:
+#0 /home/vol18_1/byethost11.com/b11_39498725/educonnect.fast-page.org/htdocs/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php(184): mysqli->real_connect('localhost', '', Object(SensitiveParameterValue), '', 3306, '', 0)
+#1 /home/vol18_1/byethost11.com/b11_39498725/educonnect.fast-page.org/htdocs/vendor/codeigniter4/framework/system/Database/BaseConnection.php(392): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 /home/vol18_1/byethost11.com/b11_39498725/educonnect.fast-page.org/htdocs/vendor/codeigniter4/framework/system/Database/BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+#3 /home/vol18_1/byethost11.com/b11_39498725/educonnect.fast-page.org/htdocs/vendor/codeigniter4/framework/system/Database/BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 /home/vol18_1/byethost11.com/b11_39498725/educonnect.fast-page.org/htdocs/vendor/codeigniter4/framework/system/Model.php(243): CodeIgniter\Database\BaseBuilder->get()
+#5 /home/vol18_1/byethost11.com/b11_39498725/educonnect.fast-page.org/htdocs/vendor/codeigniter4/framework/system/BaseModel.php(641): CodeIgniter\Model->doFindAll(0, 0)
+#6 /home/vol18_1/byethost11.com/b11_39498725/educonnect.fast-page.org/htdocs/app/Controllers/Home.php(21): CodeIgniter\BaseModel->findAll()
+#7 /home/vol18_1/byethost11.com/b11_39498725/educonnect.fast-page.org/htdocs/vendor/codeigniter4/framework/system/CodeIgniter.php(943): App\Controllers\Home->index()
+#8 /home/vol18_1/byethost11.com/b11_39498725/educonnect.fast-page.org/htdocs/vendor/codeigniter4/framework/system/CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#9 /home/vol18_1/byethost11.com/b11_39498725/educonnect.fast-page.org/htdocs/vendor/codeigniter4/framework/system/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 /home/vol18_1/byethost11.com/b11_39498725/educonnect.fast-page.org/htdocs/index.php(35): CodeIgniter\CodeIgniter->run()
+#11 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: No such file or directory in /home/vol18_1/byethost11.com/b11_39498725/educonnect.fast-page.org/htdocs/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php:229
+Stack trace:
+#0 /home/vol18_1/byethost11.com/b11_39498725/educonnect.fast-page.org/htdocs/vendor/codeigniter4/framework/system/Database/BaseConnection.php(392): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 /home/vol18_1/byethost11.com/b11_39498725/educonnect.fast-page.org/htdocs/vendor/codeigniter4/framework/system/Database/BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+#2 /home/vol18_1/byethost11.com/b11_39498725/educonnect.fast-page.org/htdocs/vendor/codeigniter4/framework/system/Database/BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#3 /home/vol18_1/byethost11.com/b11_39498725/educonnect.fast-page.org/htdocs/vendor/codeigniter4/framework/system/Model.php(243): CodeIgniter\Database\BaseBuilder->get()
+#4 /home/vol18_1/byethost11.com/b11_39498725/educonnect.fast-page.org/htdocs/vendor/codeigniter4/framework/system/BaseModel.php(641): CodeIgniter\Model->doFindAll(0, 0)
+#5 /home/vol18_1/byethost11.com/b11_39498725/educonnect.fast-page.org/htdocs/app/Controllers/Home.php(21): CodeIgniter\BaseModel->findAll()
+#6 /home/vol18_1/byethost11.com/b11_39498725/educonnect.fast-page.org/htdocs/vendor/codeigniter4/framework/system/CodeIgniter.php(943): App\Controllers\Home->index()
+#7 /home/vol18_1/byethost11.com/b11_39498725/educonnect.fast-page.org/htdocs/vendor/codeigniter4/framework/system/CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#8 /home/vol18_1/byethost11.com/b11_39498725/educonnect.fast-page.org/htdocs/vendor/codeigniter4/framework/system/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 /home/vol18_1/byethost11.com/b11_39498725/educonnect.fast-page.org/htdocs/index.php(35): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2025-07-27 06:07:48 --> CodeIgniter\Database\Exceptions\DatabaseException: Unable to connect to the database.
+Main connection [MySQLi]: No such file or directory
+in SYSTEMPATH/Database/BaseConnection.php on line 428.
+ 1 SYSTEMPATH/Database/BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH/Database/BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `materi`
+WHERE `status` = :status:
+ORDER BY `created_at` DESC', [...], false)
+ 3 SYSTEMPATH/Model.php(243): CodeIgniter\Database\BaseBuilder->get()
+ 4 SYSTEMPATH/BaseModel.php(641): CodeIgniter\Model->doFindAll(0, 0)
+ 5 APPPATH/Controllers/Home.php(21): CodeIgniter\BaseModel->findAll()
+ 6 SYSTEMPATH/CodeIgniter.php(943): App\Controllers\Home->index()
+ 7 SYSTEMPATH/CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH/index.php(35): CodeIgniter\CodeIgniter->run()
+INFO - 2025-07-27 06:14:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-07-27 06:15:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-07-27 06:16:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-07-27 06:16:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-07-27 06:16:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-07-27 06:28:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-07-27 06:28:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-07-27 06:28:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-07-27 06:28:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-07-27 06:28:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-07-27 06:28:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-07-27 06:29:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-07-27 06:29:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-07-27 06:29:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-07-27 06:29:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-07-27 06:29:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-07-27 06:29:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-07-27 06:31:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-07-27 06:31:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-07-27 06:31:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-07-27 06:31:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-07-27 06:32:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-07-27 06:32:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-07-27 06:33:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-07-27 06:34:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-07-27 06:35:29 --> ErrorException: Maximum execution time of 60 seconds exceeded
+in SYSTEMPATH/HotReloader/DirectoryHasher.php on line 74.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2025-07-27 06:36:35 --> ErrorException: Maximum execution time of 60 seconds exceeded
+in SYSTEMPATH/HotReloader/IteratorFilter.php on line 39.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2025-07-27 06:37:41 --> ErrorException: Maximum execution time of 60 seconds exceeded
+in SYSTEMPATH/HotReloader/DirectoryHasher.php on line 72.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2025-07-27 06:38:47 --> ErrorException: Maximum execution time of 60 seconds exceeded
+in SYSTEMPATH/HotReloader/DirectoryHasher.php on line 74.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+INFO - 2025-07-27 06:39:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-07-27 06:40:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-07-27 06:40:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-07-27 06:42:54 --> ErrorException: Maximum execution time of 60 seconds exceeded
+in SYSTEMPATH/HotReloader/DirectoryHasher.php on line 74.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2025-07-27 06:44:00 --> ErrorException: Maximum execution time of 60 seconds exceeded
+in SYSTEMPATH/HotReloader/DirectoryHasher.php on line 74.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2025-07-27 06:45:07 --> ErrorException: Maximum execution time of 60 seconds exceeded
+in SYSTEMPATH/HotReloader/DirectoryHasher.php on line 74.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2025-07-27 06:46:13 --> ErrorException: Maximum execution time of 60 seconds exceeded
+in SYSTEMPATH/HotReloader/DirectoryHasher.php on line 74.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2025-07-27 06:47:19 --> ErrorException: Maximum execution time of 60 seconds exceeded
+in SYSTEMPATH/HotReloader/IteratorFilter.php on line 39.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+INFO - 2025-07-27 06:48:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-07-27 06:48:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-07-27 06:48:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-07-27 06:48:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-07-27 06:49:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2025-07-27 06:49:04 --> mysqli_sql_exception: Unknown column 'updated_at' in 'INSERT INTO' in /home/vol18_1/byethost11.com/b11_39498725/educonnect.fast-page.org/htdocs/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php:306
+Stack trace:
+#0 /home/vol18_1/byethost11.com/b11_39498725/educonnect.fast-page.org/htdocs/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php(306): mysqli->query('INSERT INTO `ma...', 0)
+#1 /home/vol18_1/byethost11.com/b11_39498725/educonnect.fast-page.org/htdocs/vendor/codeigniter4/framework/system/Database/BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `ma...')
+#2 /home/vol18_1/byethost11.com/b11_39498725/educonnect.fast-page.org/htdocs/vendor/codeigniter4/framework/system/Database/BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `ma...')
+#3 /home/vol18_1/byethost11.com/b11_39498725/educonnect.fast-page.org/htdocs/vendor/codeigniter4/framework/system/Database/BaseBuilder.php(2307): CodeIgniter\Database\BaseConnection->query('INSERT INTO `ma...', Array, false)
+#4 /home/vol18_1/byethost11.com/b11_39498725/educonnect.fast-page.org/htdocs/vendor/codeigniter4/framework/system/Model.php(327): CodeIgniter\Database\BaseBuilder->insert()
+#5 /home/vol18_1/byethost11.com/b11_39498725/educonnect.fast-page.org/htdocs/vendor/codeigniter4/framework/system/BaseModel.php(805): CodeIgniter\Model->doInsert(Array)
+#6 /home/vol18_1/byethost11.com/b11_39498725/educonnect.fast-page.org/htdocs/vendor/codeigniter4/framework/system/Model.php(749): CodeIgniter\BaseModel->insert(Array, true)
+#7 /home/vol18_1/byethost11.com/b11_39498725/educonnect.fast-page.org/htdocs/app/Controllers/Materi.php(44): CodeIgniter\Model->insert(Array)
+#8 /home/vol18_1/byethost11.com/b11_39498725/educonnect.fast-page.org/htdocs/vendor/codeigniter4/framework/system/CodeIgniter.php(943): App\Controllers\Materi->save()
+#9 /home/vol18_1/byethost11.com/b11_39498725/educonnect.fast-page.org/htdocs/vendor/codeigniter4/framework/system/CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Materi))
+#10 /home/vol18_1/byethost11.com/b11_39498725/educonnect.fast-page.org/htdocs/vendor/codeigniter4/framework/system/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 /home/vol18_1/byethost11.com/b11_39498725/educonnect.fast-page.org/htdocs/index.php(35): CodeIgniter\CodeIgniter->run()
+#12 {main}
+CRITICAL - 2025-07-27 06:49:04 --> CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'updated_at' in 'INSERT INTO'
+in SYSTEMPATH/Database/BaseConnection.php on line 647.
+ 1 SYSTEMPATH/Database/BaseBuilder.php(2307): CodeIgniter\Database\BaseConnection->query('INSERT INTO `materi` (`judul`, `deskripsi`, `jenis`, `file_path`, `thumbnail`, `status`, `user_id`, `created_at`, `updated_at`) VALUES (:judul:, :deskripsi:, :jenis:, :file_path:, :thumbnail:, :status:, :user_id:, :created_at:, :updated_at:)', [...], false)
+ 2 SYSTEMPATH/Model.php(327): CodeIgniter\Database\BaseBuilder->insert()
+ 3 SYSTEMPATH/BaseModel.php(805): CodeIgniter\Model->doInsert([...])
+ 4 SYSTEMPATH/Model.php(749): CodeIgniter\BaseModel->insert([...], true)
+ 5 APPPATH/Controllers/Materi.php(44): CodeIgniter\Model->insert([...])
+ 6 SYSTEMPATH/CodeIgniter.php(943): App\Controllers\Materi->save()
+ 7 SYSTEMPATH/CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Materi))
+ 8 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH/index.php(35): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2025-07-27 06:49:04 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'updated_at' in 'INSERT INTO'
+in SYSTEMPATH/Database/MySQLi/Connection.php on line 311.
+ 1 SYSTEMPATH/Database/BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `materi` (`judul`, `deskripsi`, `jenis`, `file_path`, `thumbnail`, `status`, `user_id`, `created_at`, `updated_at`) VALUES (\'test\', \'asdasdasdas\', \'application\', \'uploads/1753598944_e48751e7beb5944651e7.pdf\', NULL, \'approved\', \'2\', \'2025-07-27 06:49:04\', \'2025-07-27 06:49:04\')')
+ 2 SYSTEMPATH/Database/BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `materi` (`judul`, `deskripsi`, `jenis`, `file_path`, `thumbnail`, `status`, `user_id`, `created_at`, `updated_at`) VALUES (\'test\', \'asdasdasdas\', \'application\', \'uploads/1753598944_e48751e7beb5944651e7.pdf\', NULL, \'approved\', \'2\', \'2025-07-27 06:49:04\', \'2025-07-27 06:49:04\')')
+ 3 SYSTEMPATH/Database/BaseBuilder.php(2307): CodeIgniter\Database\BaseConnection->query('INSERT INTO `materi` (`judul`, `deskripsi`, `jenis`, `file_path`, `thumbnail`, `status`, `user_id`, `created_at`, `updated_at`) VALUES (:judul:, :deskripsi:, :jenis:, :file_path:, :thumbnail:, :status:, :user_id:, :created_at:, :updated_at:)', [...], false)
+ 4 SYSTEMPATH/Model.php(327): CodeIgniter\Database\BaseBuilder->insert()
+ 5 SYSTEMPATH/BaseModel.php(805): CodeIgniter\Model->doInsert([...])
+ 6 SYSTEMPATH/Model.php(749): CodeIgniter\BaseModel->insert([...], true)
+ 7 APPPATH/Controllers/Materi.php(44): CodeIgniter\Model->insert([...])
+ 8 SYSTEMPATH/CodeIgniter.php(943): App\Controllers\Materi->save()
+ 9 SYSTEMPATH/CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Materi))
+10 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH/index.php(35): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2025-07-27 06:49:04 --> [Caused by] mysqli_sql_exception: Unknown column 'updated_at' in 'INSERT INTO'
+in SYSTEMPATH/Database/MySQLi/Connection.php on line 306.
+ 1 SYSTEMPATH/Database/MySQLi/Connection.php(306): mysqli->query('INSERT INTO `materi` (`judul`, `deskripsi`, `jenis`, `file_path`, `thumbnail`, `status`, `user_id`, `created_at`, `updated_at`) VALUES (\'test\', \'asdasdasdas\', \'application\', \'uploads/1753598944_e48751e7beb5944651e7.pdf\', NULL, \'approved\', \'2\', \'2025-07-27 06:49:04\', \'2025-07-27 06:49:04\')', 0)
+ 2 SYSTEMPATH/Database/BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `materi` (`judul`, `deskripsi`, `jenis`, `file_path`, `thumbnail`, `status`, `user_id`, `created_at`, `updated_at`) VALUES (\'test\', \'asdasdasdas\', \'application\', \'uploads/1753598944_e48751e7beb5944651e7.pdf\', NULL, \'approved\', \'2\', \'2025-07-27 06:49:04\', \'2025-07-27 06:49:04\')')
+ 3 SYSTEMPATH/Database/BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `materi` (`judul`, `deskripsi`, `jenis`, `file_path`, `thumbnail`, `status`, `user_id`, `created_at`, `updated_at`) VALUES (\'test\', \'asdasdasdas\', \'application\', \'uploads/1753598944_e48751e7beb5944651e7.pdf\', NULL, \'approved\', \'2\', \'2025-07-27 06:49:04\', \'2025-07-27 06:49:04\')')
+ 4 SYSTEMPATH/Database/BaseBuilder.php(2307): CodeIgniter\Database\BaseConnection->query('INSERT INTO `materi` (`judul`, `deskripsi`, `jenis`, `file_path`, `thumbnail`, `status`, `user_id`, `created_at`, `updated_at`) VALUES (:judul:, :deskripsi:, :jenis:, :file_path:, :thumbnail:, :status:, :user_id:, :created_at:, :updated_at:)', [...], false)
+ 5 SYSTEMPATH/Model.php(327): CodeIgniter\Database\BaseBuilder->insert()
+ 6 SYSTEMPATH/BaseModel.php(805): CodeIgniter\Model->doInsert([...])
+ 7 SYSTEMPATH/Model.php(749): CodeIgniter\BaseModel->insert([...], true)
+ 8 APPPATH/Controllers/Materi.php(44): CodeIgniter\Model->insert([...])
+ 9 SYSTEMPATH/CodeIgniter.php(943): App\Controllers\Materi->save()
+10 SYSTEMPATH/CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Materi))
+11 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 FCPATH/index.php(35): CodeIgniter\CodeIgniter->run()
+INFO - 2025-07-27 06:51:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-07-27 06:51:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-07-27 06:51:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-07-27 06:52:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-07-27 06:52:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-07-27 06:52:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-07-27 06:52:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-07-27 06:52:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-07-27 06:52:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-07-27 06:52:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-07-27 06:52:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-07-27 06:52:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-07-27 06:53:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-07-27 06:53:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-07-27 06:53:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-07-27 06:53:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-07-27 06:53:27 --> ErrorException: Undefined array key "id"
+in APPPATH/Views/admin/materi_list.php on line 67.
+ 1 APPPATH/Views/admin/materi_list.php(67): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "id"', '/home/vol18_1/byethost11.com/b11_39498725/educonnect.fast-page.org/htdocs/app/Views/admin/materi_list.php', 67)
+ 2 SYSTEMPATH/View/View.php(228): include('/home/vol18_1/byethost11.com/b11_39498725/educonnect.fast-page.org/htdocs/app/Views/admin/materi_list.php')
+ 3 SYSTEMPATH/View/View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1178): CodeIgniter\View\View->render('admin/materi_list', [], true)
+ 5 APPPATH/Controllers/Admin.php(27): view('admin/materi_list', [...])
+ 6 SYSTEMPATH/CodeIgniter.php(943): App\Controllers\Admin->materi()
+ 7 SYSTEMPATH/CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 8 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH/index.php(35): CodeIgniter\CodeIgniter->run()
+INFO - 2025-07-27 07:05:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-07-27 07:05:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-07-27 07:05:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-07-27 07:05:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-07-27 07:05:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-07-27 07:06:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-07-27 07:06:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-07-27 07:06:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-07-27 07:06:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-07-27 07:06:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-07-27 07:11:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-07-27 07:12:08 --> ErrorException: Maximum execution time of 60 seconds exceeded
+in SYSTEMPATH/HotReloader/DirectoryHasher.php on line 74.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2025-07-27 07:13:14 --> ErrorException: Maximum execution time of 60 seconds exceeded
+in SYSTEMPATH/HotReloader/DirectoryHasher.php on line 72.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2025-07-27 07:14:20 --> ErrorException: Maximum execution time of 60 seconds exceeded
+in SYSTEMPATH/HotReloader/DirectoryHasher.php on line 74.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2025-07-27 07:15:26 --> ErrorException: Maximum execution time of 60 seconds exceeded
+in SYSTEMPATH/HotReloader/DirectoryHasher.php on line 74.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2025-07-27 07:16:32 --> ErrorException: Maximum execution time of 60 seconds exceeded
+in SYSTEMPATH/HotReloader/DirectoryHasher.php on line 72.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+INFO - 2025-07-27 07:16:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-07-27 07:16:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-07-27 07:16:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-07-27 07:17:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-07-27 07:17:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-07-27 07:17:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-07-27 07:17:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-07-27 07:17:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-07-27 07:17:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-07-27 07:18:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-07-27 07:18:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-07-27 07:18:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-07-27 07:18:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-07-27 07:18:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-07-27 07:18:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-07-27 07:18:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-07-27 07:18:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-07-27 07:18:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-07-27 07:18:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-07-27 07:19:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-07-27 07:19:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-07-27 07:19:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-07-27 07:19:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-07-27 07:19:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-07-27 07:19:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-07-27 07:19:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-07-27 07:19:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-07-27 07:19:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-07-27 07:19:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-07-27 07:19:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-07-27 07:20:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-07-27 07:20:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-07-27 07:20:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-07-27 07:20:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-07-27 07:20:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-07-27 07:20:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-07-27 07:20:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-07-27 07:20:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-07-27 07:21:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-07-27 07:21:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-07-27 07:21:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-07-27 07:21:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-07-27 07:21:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-07-27 07:21:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-07-27 07:21:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-07-27 07:21:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-07-27 07:21:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-07-27 07:22:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-07-27 07:22:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-07-27 07:23:13 --> ErrorException: Maximum execution time of 60 seconds exceeded
+in SYSTEMPATH/HotReloader/IteratorFilter.php on line 39.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2025-07-27 07:24:19 --> ErrorException: Maximum execution time of 60 seconds exceeded
+in SYSTEMPATH/HotReloader/DirectoryHasher.php on line 74.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2025-07-27 07:25:25 --> ErrorException: Maximum execution time of 60 seconds exceeded
+in SYSTEMPATH/HotReloader/IteratorFilter.php on line 39.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2025-07-27 07:26:31 --> ErrorException: Maximum execution time of 60 seconds exceeded
+in SYSTEMPATH/HotReloader/IteratorFilter.php on line 39.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2025-07-27 07:27:40 --> ErrorException: Maximum execution time of 60 seconds exceeded
+in SYSTEMPATH/HotReloader/DirectoryHasher.php on line 74.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2025-07-27 07:28:46 --> ErrorException: Maximum execution time of 60 seconds exceeded
+in SYSTEMPATH/HotReloader/DirectoryHasher.php on line 74.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2025-07-27 07:29:52 --> ErrorException: Maximum execution time of 60 seconds exceeded
+in SYSTEMPATH/HotReloader/IteratorFilter.php on line 39.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2025-07-27 07:30:58 --> ErrorException: Maximum execution time of 60 seconds exceeded
+in SYSTEMPATH/HotReloader/DirectoryHasher.php on line 74.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2025-07-27 07:32:04 --> ErrorException: Maximum execution time of 60 seconds exceeded
+in SYSTEMPATH/HotReloader/IteratorFilter.php on line 39.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2025-07-27 07:33:10 --> ErrorException: Maximum execution time of 60 seconds exceeded
+in SYSTEMPATH/HotReloader/IteratorFilter.php on line 39.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2025-07-27 07:34:16 --> ErrorException: Maximum execution time of 60 seconds exceeded
+in SYSTEMPATH/HotReloader/IteratorFilter.php on line 39.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2025-07-27 07:35:21 --> ErrorException: Maximum execution time of 60 seconds exceeded
+in SYSTEMPATH/HotReloader/IteratorFilter.php on line 39.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2025-07-27 07:36:27 --> ErrorException: Maximum execution time of 60 seconds exceeded
+in SYSTEMPATH/HotReloader/DirectoryHasher.php on line 74.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2025-07-27 07:37:34 --> ErrorException: Maximum execution time of 60 seconds exceeded
+in SYSTEMPATH/HotReloader/DirectoryHasher.php on line 74.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+INFO - 2025-07-27 07:38:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-07-27 07:38:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-07-27 07:39:36 --> ErrorException: Maximum execution time of 60 seconds exceeded
+in SYSTEMPATH/HotReloader/DirectoryHasher.php on line 72.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+ERROR - 2025-07-27 08:51:54 --> mysqli_sql_exception: Duplicate entry 'admin' for key 'username' in /home/vol18_1/byethost11.com/b11_39498725/educonnect.fast-page.org/htdocs/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php:306
+Stack trace:
+#0 /home/vol18_1/byethost11.com/b11_39498725/educonnect.fast-page.org/htdocs/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php(306): mysqli->query('INSERT INTO `us...', 0)
+#1 /home/vol18_1/byethost11.com/b11_39498725/educonnect.fast-page.org/htdocs/vendor/codeigniter4/framework/system/Database/BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `us...')
+#2 /home/vol18_1/byethost11.com/b11_39498725/educonnect.fast-page.org/htdocs/vendor/codeigniter4/framework/system/Database/BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `us...')
+#3 /home/vol18_1/byethost11.com/b11_39498725/educonnect.fast-page.org/htdocs/vendor/codeigniter4/framework/system/Database/BaseBuilder.php(2307): CodeIgniter\Database\BaseConnection->query('INSERT INTO `us...', Array, false)
+#4 /home/vol18_1/byethost11.com/b11_39498725/educonnect.fast-page.org/htdocs/vendor/codeigniter4/framework/system/Model.php(327): CodeIgniter\Database\BaseBuilder->insert()
+#5 /home/vol18_1/byethost11.com/b11_39498725/educonnect.fast-page.org/htdocs/vendor/codeigniter4/framework/system/BaseModel.php(805): CodeIgniter\Model->doInsert(Array)
+#6 /home/vol18_1/byethost11.com/b11_39498725/educonnect.fast-page.org/htdocs/vendor/codeigniter4/framework/system/Model.php(749): CodeIgniter\BaseModel->insert(Array, true)
+#7 /home/vol18_1/byethost11.com/b11_39498725/educonnect.fast-page.org/htdocs/app/Controllers/Auth.php(22): CodeIgniter\Model->insert(Array)
+#8 /home/vol18_1/byethost11.com/b11_39498725/educonnect.fast-page.org/htdocs/vendor/codeigniter4/framework/system/CodeIgniter.php(943): App\Controllers\Auth->register()
+#9 /home/vol18_1/byethost11.com/b11_39498725/educonnect.fast-page.org/htdocs/vendor/codeigniter4/framework/system/CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth))
+#10 /home/vol18_1/byethost11.com/b11_39498725/educonnect.fast-page.org/htdocs/vendor/codeigniter4/framework/system/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 /home/vol18_1/byethost11.com/b11_39498725/educonnect.fast-page.org/htdocs/index.php(35): CodeIgniter\CodeIgniter->run()
+#12 {main}
